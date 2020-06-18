@@ -116,16 +116,16 @@ var config = {
     // used by browsers that return true from lib-jitsi-meet's
     // util#browser#usesNewGumFlow. The constraints are independent from
     // this config's resolution value. Defaults to requesting an ideal
-    // resolution of 720p.
-    // constraints: {
-    //     video: {
-    //         height: {
-    //             ideal: 720,
-    //             max: 720,
-    //             min: 240
-    //         }
-    //     }
-    // },
+    // resolution of 360p.
+     constraints: {
+         video: {
+             height: {
+                 ideal: 360,
+                 max: 480,
+                 min: 180
+             }
+         }
+     },
 
     // Enable / disable simulcast support.
     // disableSimulcast: false,
